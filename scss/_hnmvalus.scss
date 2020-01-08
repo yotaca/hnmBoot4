@@ -1,0 +1,456 @@
+
+//フォントサイズ
+$hnm-sans: -apple-system,'Noto Sans JP','Segoe UI','Lucida Grande','Hiragino Kaku Gothic ProN','メイリオ',meiryo,sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$hnm-sans-bold: -apple-system,'Noto Sans JP','Segoe UI','Lucida Grande','Hiragino Kaku Gothic ProN','メイリオ',meiryo,sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$hnm-mono: -apple-system,'Noto Sans JP',SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New','Hiragino Kaku Gothic ProN','メイリオ',meiryo,monospace;
+$hnm-serif: 'Noto Serif JP', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+$hnm-padd: 15px;
+$hnm-fsize: 14px;
+
+//アイコンフォント
+$hnm-aicon-font: 'Aicon';
+$hnm-aicon-font-src: 'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/fonts/glyphicons-halflings-regular';
+$hnm-aicon:(
+	'asterisk': '\002a',
+	'plus': '\002b',
+	'euro': '\20ac',
+	'eur': '\20ac',
+	'minus': '\2212',
+	'cloud': '\2601',
+	'envelope': '\2709',
+	'pencil': '\270f',
+	'glass': '\e001',
+	'music': '\e002',
+	'search': '\e003',
+	'heart': '\e005',
+	'star': '\e006',
+	'star-empty': '\e007',
+	'user': '\e008',
+	'film': '\e009',
+	'th-large': '\e010',
+	'th': '\e011',
+	'th-list': '\e012',
+	'ok': '\e013',
+	'remove': '\e014',
+	'zoom-in': '\e015',
+	'zoom-out': '\e016',
+	'off': '\e017',
+	'signal': '\e018',
+	'cog': '\e019',
+	'trash': '\e020',
+	'home': '\e021',
+	'file': '\e022',
+	'time': '\e023',
+	'road': '\e024',
+	'download-alt': '\e025',
+	'download': '\e026',
+	'upload': '\e027',
+	'inbox': '\e028',
+	'play-circle': '\e029',
+	'repeat': '\e030',
+	'refresh': '\e031',
+	'list-alt': '\e032',
+	'lock': '\e033',
+	'flag': '\e034',
+	'headphones': '\e035',
+	'volume-off': '\e036',
+	'volume-down': '\e037',
+	'volume-up': '\e038',
+	'qrcode': '\e039',
+	'barcode': '\e040',
+	'tag': '\e041',
+	'tags': '\e042',
+	'book': '\e043',
+	'bookmark': '\e044',
+	'print': '\e045',
+	'camera': '\e046',
+	'font': '\e047',
+	'bold': '\e048',
+	'italic': '\e049',
+	'text-height': '\e050',
+	'text-width': '\e051',
+	'align-left': '\e052',
+	'align-center': '\e053',
+	'align-right': '\e054',
+	'align-justify': '\e055',
+	'list': '\e056',
+	'indent-left': '\e057',
+	'indent-right': '\e058',
+	'facetime-video': '\e059',
+	'picture': '\e060',
+	'map-marker': '\e062',
+	'adjust': '\e063',
+	'tint': '\e064',
+	'edit': '\e065',
+	'share': '\e066',
+	'check': '\e067',
+	'move': '\e068',
+	'step-backward': '\e069',
+	'fast-backward': '\e070',
+	'backward': '\e071',
+	'play': '\e072',
+	'pause': '\e073',
+	'stop': '\e074',
+	'forward': '\e075',
+	'fast-forward': '\e076',
+	'step-forward': '\e077',
+	'eject': '\e078',
+	'chevron-left': '\e079',
+	'chevron-right': '\e080',
+	'plus-sign': '\e081',
+	'minus-sign': '\e082',
+	'remove-sign': '\e083',
+	'ok-sign': '\e084',
+	'question-sign': '\e085',
+	'info-sign': '\e086',
+	'screenshot': '\e087',
+	'remove-circle': '\e088',
+	'ok-circle': '\e089',
+	'ban-circle': '\e090',
+	'arrow-left': '\e091',
+	'arrow-right': '\e092',
+	'arrow-up': '\e093',
+	'arrow-down': '\e094',
+	'share-alt': '\e095',
+	'resize-full': '\e096',
+	'resize-small': '\e097',
+	'exclamation-sign': '\e101',
+	'gift': '\e102',
+	'leaf': '\e103',
+	'fire': '\e104',
+	'eye-open': '\e105',
+	'eye-close': '\e106',
+	'warning-sign': '\e107',
+	'plane': '\e108',
+	'calendar': '\e109',
+	'random': '\e110',
+	'comment': '\e111',
+	'magnet': '\e112',
+	'chevron-up': '\e113',
+	'chevron-down': '\e114',
+	'retweet': '\e115',
+	'shopping-cart': '\e116',
+	'folder-close': '\e117',
+	'folder-open': '\e118',
+	'resize-vertical': '\e119',
+	'resize-horizontal': '\e120',
+	'hdd': '\e121',
+	'bullhorn': '\e122',
+	'bell': '\e123',
+	'certificate': '\e124',
+	'thumbs-up': '\e125',
+	'thumbs-down': '\e126',
+	'hand-right': '\e127',
+	'hand-left': '\e128',
+	'hand-up': '\e129',
+	'hand-down': '\e130',
+	'circle-arrow-right': '\e131',
+	'circle-arrow-left': '\e132',
+	'circle-arrow-up': '\e133',
+	'circle-arrow-down': '\e134',
+	'globe': '\e135',
+	'wrench': '\e136',
+	'tasks': '\e137',
+	'filter': '\e138',
+	'briefcase': '\e139',
+	'fullscreen': '\e140',
+	'dashboard': '\e141',
+	'paperclip': '\e142',
+	'heart-empty': '\e143',
+	'link': '\e144',
+	'phone': '\e145',
+	'pushpin': '\e146',
+	'usd': '\e148',
+	'gbp': '\e149',
+	'sort': '\e150',
+	'sort-by-alphabet': '\e151',
+	'sort-by-alphabet-alt': '\e152',
+	'sort-by-order': '\e153',
+	'sort-by-order-alt': '\e154',
+	'sort-by-attributes': '\e155',
+	'sort-by-attributes-alt': '\e156',
+	'unchecked': '\e157',
+	'expand': '\e158',
+	'collapse-down': '\e159',
+	'collapse-up': '\e160',
+	'log-in': '\e161',
+	'flash': '\e162',
+	'log-out': '\e163',
+	'new-window': '\e164',
+	'record': '\e165',
+	'save': '\e166',
+	'open': '\e167',
+	'saved': '\e168',
+	'import': '\e169',
+	'export': '\e170',
+	'send': '\e171',
+	'floppy-disk': '\e172',
+	'floppy-saved': '\e173',
+	'floppy-remove': '\e174',
+	'floppy-save': '\e175',
+	'floppy-open': '\e176',
+	'credit-card': '\e177',
+	'transfer': '\e178',
+	'cutlery': '\e179',
+	'header': '\e180',
+	'compressed': '\e181',
+	'earphone': '\e182',
+	'phone-alt': '\e183',
+	'tower': '\e184',
+	'stats': '\e185',
+	'sd-video': '\e186',
+	'hd-video': '\e187',
+	'subtitles': '\e188',
+	'sound-stereo': '\e189',
+	'sound-dolby': '\e190',
+	'sound-5-1': '\e191',
+	'sound-6-1': '\e192',
+	'sound-7-1': '\e193',
+	'copyright-mark': '\e194',
+	'registration-mark': '\e195',
+	'cloud-download': '\e197',
+	'cloud-upload': '\e198',
+	'tree-conifer': '\e199',
+	'tree-deciduous': '\e200',
+	'cd': '\e201',
+	'save-file': '\e202',
+	'open-file': '\e203',
+	'level-up': '\e204',
+	'copy': '\e205',
+	'paste': '\e206',
+	'alert': '\e209',
+	'equalizer': '\e210',
+	'king': '\e211',
+	'queen': '\e212',
+	'pawn': '\e213',
+	'bishop': '\e214',
+	'knight': '\e215',
+	'baby-formula': '\e216',
+	'tent': '\26fa',
+	'blackboard': '\e218',
+	'bed': '\e219',
+	'apple': '\f8ff',
+	'erase': '\e221',
+	'hourglass': '\231b',
+	'lamp': '\e223',
+	'duplicate': '\e224',
+	'piggy-bank': '\e225',
+	'scissors': '\e226',
+	'bitcoin': '\e227',
+	'btc': '\e227',
+	'xbt': '\e227',
+	'yen': '\00a5',
+	'jpy': '\00a5',
+	'ruble': '\20bd',
+	'rub': '\20bd',
+	'scale': '\e230',
+	'ice-lolly': '\e231',
+	'ice-lolly-tasted': '\e232',
+	'education': '\e233',
+	'option-horizontal': '\e234',
+	'option-vertical': '\e235',
+	'menu-hamburger': '\e236',
+	'modal-window': '\e237',
+	'oil': '\e238',
+	'grain': '\e239',
+	'sunglasses': '\e240',
+	'text-size': '\e241',
+	'text-color': '\e242',
+	'text-background': '\e243',
+	'object-align-top': '\e244',
+	'object-align-bottom': '\e245',
+	'object-align-horizontal': '\e246',
+	'object-align-left': '\e247',
+	'object-align-vertical': '\e248',
+	'object-align-right': '\e249',
+	'triangle-right': '\e250',
+	'triangle-left': '\e251',
+	'triangle-bottom': '\e252',
+	'triangle-top': '\e253',
+	'console': '\e254',
+	'superscript': '\e255',
+	'subscript': '\e256',
+	'menu-left': '\e257',
+	'menu-right': '\e258',
+	'menu-down': '\e259',
+	'menu-up': '\e260'
+);
+$hnm-br: '\A';
+
+// カラー設定
+$gray-100:	#f8f9fa; //1
+$gray-200:	#e9ecef; //2
+$gray-300:	#dee2e6; //3
+$gray-400:	#ced4da; //4
+$gray-500:	#adb5bd; //5
+$gray-600:	#6c757d; //6
+$gray-700:	#495057; //7
+$gray-800:	#343a40; //8
+$gray-900:	#212529; //9
+$black:			#000; //10
+$white:			#fff; //11
+
+$hnm-blue:		#0E3B73; //1
+$hnm-indigo:		#3E5A99; //2
+$hnm-purple:		#5D448A; //3
+$hnm-pink:		#E35394; //4
+$hnm-red:			#AC232F; //5
+$hnm-orange:	#D3710E; //6
+$hnm-yelw:		#FBC903; //7
+$hnm-grn:			#005139; //8
+$hnm-mint:		#42B578; //9
+$hnm-cyan:		#41ABDC; //10
+
+$_mtone:(
+	$gray-100,
+	$gray-200,
+	$gray-300,
+	$gray-400,
+	$gray-500,
+	$gray-600,
+	$gray-700,
+	$gray-800,
+	$gray-900,
+	$black,
+	$white
+);
+
+$_colores:(
+	$hnm-blue,
+	$hnm-indigo,
+	$hnm-purple,
+	$hnm-pink,
+	$hnm-red,
+	$hnm-orange,
+	$hnm-yelw,
+	$hnm-grn,
+	$hnm-mint,
+	$hnm-cyan
+);
+
+// adjust-hue
+// saturate
+// desaturate
+// lighten
+// darken
+// rgba
+// invert
+// grayscale
+// complement
+// mix
+
+$primary:		$hnm-blue;
+$secondary:	$gray-600;
+$success:		$hnm-grn;
+$info:			$hnm-cyan;
+$warning:		$hnm-yelw;
+$danger:		$hnm-red;
+$light:			$gray-100;
+$dark:			$gray-800;
+
+$theme-color-interval:	8%;
+$hnm-contrasted-threshold:	150;
+$hnm-per:( 5%, 17%, 30%, 38%, 47%, 54%, 63%, 70%, 80%, 90%);
+
+$hnm-base:	nth($_colores, $_bsnum); //テーマカラー
+$hnm-scnd:	nth($_colores, $_scnum); //セカンドカラー
+
+$hnm-bg:				$gray-100; //背景色 100 デフォルト
+$hnm-bg-sem:		$gray-300;
+$hnm-bg-mid:		$gray-500;
+$hnm-bg-scnd:		$gray-800;
+
+$hnm-txt:				$gray-800; //文字色 デフォルト
+$hnm-txt-sem:		$gray-600;
+$hnm-txt-mid:		$gray-500;
+$hnm-txt-scnd:		$gray-200;
+$hnm-txt-hvr:		lighten($hnm-txt, nth($hnm-per, 2)); //文字色 デフォルト フーバー
+
+$hnm-txt-red: 		$hnm-red; //赤文字
+$hnm-txt-grn: 		$hnm-grn; //緑文字
+
+$hnm-txt-base:		$hnm-base; // ベース色テキスト
+
+$hnm-bg-gry-alfa:			rgba($gray-800, 0.9); // 背景グレー透過
+$hnm-bg-sem-alfa:			rgba($hnm-bg-sem, 0.5);
+$hnm-bg-alfa:				rgba($hnm-base, 0.9); // 背景ベース透過
+$hnm-bg-base-alfa:		rgba($hnm-base, 0.5);
+$hnm-bg-base-sem-alfa:	rgba($hnm-base, 0.3);
+$hnm-bg-white-alfa:		rgba($white, 0.5);
+
+$hnm-hr-def:		$gray-900; //罫線
+$hnm-hr:			$gray-500;
+$hnm-hr-scnd:	$gray-300;
+$hnm-hr-alfa:		rgba($hnm-hr, 0.9);
+
+$hnm-lnk:				$hnm-blue; //リンク文字色
+$hnm-lnk-hvr:		lighten($hnm-lnk, nth($hnm-per, 2));
+$hnm-lnk-bg:			$gray-100;
+$hnm-lnk-bg-hvr:	darken($hnm-lnk-bg, nth($hnm-per, 2));
+$hnm-lnk-hr:			$gray-500;
+$hnm-lnk-hr-hvr:	lighten($hnm-lnk-hr, nth($hnm-per, 2));
+
+$hnm-lnk-dark:				$gray-700;
+$hnm-lnk-dark-hvr:		darken($hnm-lnk-dark, nth($hnm-per, 2));
+$hnm-lnk-dark-bg:			$gray-100;
+$hnm-lnk-dark-bg-hvr:	darken($hnm-lnk-dark-bg, nth($hnm-per, 2));
+$hnm-lnk-dark-hr:			$gray-500;
+$hnm-lnk-dark-hr-hvr:	lighten($hnm-lnk-dark-hr, nth($hnm-per, 2));
+
+$hnm-lnk-mid:				$gray-500;
+$hnm-lnk-mid-hvr:			lighten($hnm-lnk-mid, nth($hnm-per, 2));
+$hnm-lnk-mid-bg:			$gray-100;
+$hnm-lnk-mid-bg-hvr:		darken($hnm-lnk-mid-bg, nth($hnm-per, 2));
+$hnm-lnk-mid-hr:			$gray-300;
+$hnm-lnk-mid-hr-hvr:		darken($hnm-lnk-mid-hr, nth($hnm-per, 2));
+
+$hnm-lnk-scnd:				$gray-200;
+$hnm-lnk-scnd-hvr:		lighten($hnm-lnk-scnd, nth($hnm-per, 2));
+$hnm-lnk-scnd-bg:			$gray-800;
+$hnm-lnk-scnd-bg-hvr:	darken($hnm-lnk-scnd-bg, nth($hnm-per, 1));
+$hnm-lnk-scnd-hr:			$gray-500;
+$hnm-lnk-scnd-hr-hvr:	darken($hnm-lnk-scnd-hr, nth($hnm-per, 2));
+
+$hnm-btn-bg:		$hnm-base; //ボタン色
+$hnm-btn-bg-hvr:	darken($hnm-btn-bg, nth($hnm-per, 2));
+$hnm-btn-txt:		nth($_mtone, $_nvtxt);
+$hnm-btn-txt-hvr:	$white;
+$hnm-btn-bg-hr:	mix($hnm-btn-bg, $hnm-hr-def);
+	$hr_c02:			mix($hnm-btn-bg, $hnm-hr);
+	$hr_c03:			mix($hnm-btn-bg, $hnm-hr-scnd);
+$hnm-btn-hr:			$hr_c02 $hnm-btn-bg-hr $hnm-btn-bg-hr $hr_c02;
+$hnm-btn-hr-hvr:	$hnm-btn-bg-hr $hr_c02 $hr_c02 $hnm-btn-bg-hr;
+$hnm-btn-trnsition:	color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$hnm-btn-scnd-bg:		$hnm-scnd; //特色ボタン
+$hnm-btn-scnd-bg-hvr:	darken($hnm-btn-scnd-bg, nth($hnm-per, 2));
+$hnm-btn-scnd-txt:		nth($_mtone, $_nvtxt);
+$hnm-btn-scnd-txt-hvr:	$white;
+$hnm-btn-scnd-bg-hr:	mix($hnm-btn-scnd-bg, $hnm-hr-def);
+	$hr_c02:					mix($hnm-btn-scnd-bg, $hnm-hr);
+	$hr_c03:					mix($hnm-btn-scnd-bg, $hnm-hr-scnd);
+$hnm-btn-scnd-hr:			$hr_c02 $hnm-btn-scnd-bg-hr $hnm-btn-scnd-bg-hr $hr_c02;
+$hnm-btn-scnd-hr-hvr:	$hnm-btn-scnd-bg-hr $hr_c02 $hr_c02 $hnm-btn-scnd-bg-hr;
+
+$hnm-nav-bg:		$hnm-btn-bg; //ナビバーデフォ
+$hnm-nav-bg-hvr:	$hnm-btn-bg-hvr;
+$hnm-nav-hr:			$hnm-btn-bg-hvr;
+$hnm-nav-txt:		nth($_mtone, $_nvtxt);
+$hnm-nav-txt-hvr:	nth($_mtone, $_nvhvr);
+
+$hnm-nav-scnd-bg:		$gray-300; //ナビバー特色
+$hnm-nav-scnd-bg-hvr:	$gray-200;
+$hnm-nav-scnd-hr:			$gray-500;
+$hnm-nav-scnd-txt:		$gray-800;
+$hnm-nav-scnd-txt-hvr:	$gray-900;
+
+$hnm-foot-bg:		lighten($hnm-base, nth($hnm-per, 7)); // フッター
+$hnm-foot-bg-hr:	lighten($hnm-base, nth($hnm-per, 8));
+$hnm-foot-txt:		$hnm-txt-mid;
+
+$hnm-acnt:		lighten($hnm-base, nth($hnm-per, 2)); // アクセント
+$hnm-acnt-txt:	$gray-100;
+
+$hnm-jmb-txt:		$hnm-txt-scnd;
+$hnm-jmb-h1:		$hnm-scnd;
+
