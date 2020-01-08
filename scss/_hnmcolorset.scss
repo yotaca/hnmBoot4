@@ -1,0 +1,382 @@
+body{
+	color: $hnm-txt;
+	background-color: $hnm-bg;
+	main{
+		h2{
+			border-left-color: $hnm-acnt;
+			border-bottom-color: $hnm-hr-def;
+		}
+		h2, h3{
+			&.title_line{ background-color: $hnm-bg-base-sem-alfa;
+				&:before{ color: $hnm-acnt; }
+			}
+		}
+	}
+	&.home{
+		main h2{ border-bottom-color: $hnm-hr-def; }
+		.hnm-jumbotron{
+			background-color: $hnm-acnt;
+			color: $hnm-jmb-txt;
+			h1{ color: $hnm-jmb-h1; }
+			a{ color: $hnm-lnk-scnd;
+				&:hover{ color: $hnm-lnk-scnd-hvr;
+				}
+			}
+		}
+	}
+	&.member main #nucleus_mf .mailform input.formbutton{
+		color: $hnm-btn-txt;
+		background-color: $hnm-btn-bg;
+		border-color: $hnm-btn-hr;
+		&:hover{
+			color: $hnm-btn-txt-hvr;
+			background-color: $hnm-btn-bg-hvr;
+			border-color: $hnm-btn-hr-hvr;
+		}
+	}
+	}
+
+a { color: $hnm-lnk; background-color: transparent; }
+a:hover { color: $hnm-lnk-hvr; }
+
+caption { color: $hnm-txt-sem; }
+blockquote, .blockquote{ footer, .blockquote-footer { color: $hnm-txt-sem; } } //引用
+figure, .figure{ figcaption, .figure-caption { color: $hnm-txt-sem; } } //図版
+pre { color: $hnm-txt; } //整形済テキスト
+
+mark, .mark { background-color: rgba($hnm-yelw, 0.5); } //黄色マーカー
+code { color: $hnm-pink; } //ソースコード //ピンク
+kbd { color: $hnm-txt-scnd; background-color: $hnm-bg-scnd; } //ユーザー入力
+
+header.hnm-header{ // デフォルトヘッダー
+	h1{
+		.small{ color: $hnm-txt; }
+		a{ color: $hnm-txt-base;
+			&:hover{ color: $hnm-txt-base; }
+		}
+	}
+	._searchbox form{
+		border-color: $hnm-hr;
+		background: $hnm-bg;
+		button:before{ color: $hnm-txt-sem; }
+	}
+	}
+@media (min-width: 768px){
+	header.hnm-header{ // デフォルトヘッダー
+		h1{
+			a{ color: $hnm-lnk-dark;
+				&:hover{ color: $hnm-lnk-dark-hvr;}
+			}
+		}
+	}
+}
+
+.dropdown-menu { color: $hnm-txt; background-color: $hnm-bg; border-color: $hnm-hr-scnd; } //ドロップダウン グループ
+.dropdown-divider { border-top-color: $hnm-hr-scnd; } //ドロップダウン 仕切線
+.dropdown-item { // ドロップダウン 項目
+	color: $hnm-lnk-mid; background-color: transparent;
+	&:hover, &:focus { color: $hnm-lnk-mid-hvr; background-color: $hnm-bg; }
+	&:active, &.active { color: $hnm-lnk-scnd; background-color: $hnm-bg; }
+	&:disabled, &.disabled { color: $hnm-lnk-scnd; background-color: transparent; }
+	}
+.dropdown-header { color: $hnm-txt-sem; } // ドロップダウン 見出し
+.dropdown-item-text { color: $hnm-txt-mid; } // クリックできない項目
+
+.navbar-light{
+	background-color: $hnm-nav-scnd-bg;
+	.navbar-brand {
+		color: $hnm-nav-scnd-txt;
+		&:hover, &:focus { color: $hnm-nav-scnd-txt-hvr; }
+	}
+	.navbar-nav{
+		.nav-link {
+			color: $hnm-nav-scnd-txt;
+			&.show, &.active { color: $hnm-nav-scnd-txt; }
+			&:hover, &:focus { color: $hnm-nav-scnd-txt-hvr; }
+			&.disabled { color: $hnm-nav-scnd-txt; }
+		}
+		.show, .active{ > .nav-link{ color: $hnm-nav-scnd-txt; }}
+		.nav-link{ &.show, &.active { color: $hnm-nav-scnd-txt; }}
+	}
+	.navbar-toggler { color: $hnm-nav-scnd-txt; border-color: $hnm-nav-scnd-hr; }
+	.navbar-text { color: $hnm-nav-scnd-txt;
+		a{ color: $hnm-nav-scnd-txt;
+			&:hover, &:focus { color: $hnm-nav-scnd-txt-hvr; }
+		}
+	}
+	}
+.navbar-dark{
+	background-color: $hnm-nav-bg;
+	.navbar-brand {
+		color: $hnm-nav-txt;
+		&:hover, &:focus { color: $hnm-nav-txt-hvr; }
+	}
+	.navbar-nav{
+		.nav-link {
+			color: $hnm-nav-txt;
+			&.show, &.active { color: $hnm-nav-txt; }
+			&:hover, &:focus { color: $hnm-nav-txt-hvr; }
+			&.disabled { color: $hnm-nav-txt; }
+		}
+		.show, .active{ > .nav-link{ color: $hnm-nav-txt; } }
+		.nav-link{ &.show, &.active { color: $hnm-nav-txt; } }
+	}
+	.navbar-toggler { color: $hnm-nav-txt; border-color: $hnm-nav-hr; }
+	.navbar-text { color: $hnm-nav-txt;
+		a{ color: $hnm-nav-txt;
+			&:hover, &:focus { color: $hnm-nav-txt-hvr; }
+		}
+	}
+	}
+
+.breadcrumb-item{
+	+ .breadcrumb-item::before, &.active { color: $hnm-txt-mid; }
+	}
+
+.page-link {
+	color: $hnm-btn-txt;
+	background-color: $hnm-btn-bg;
+	border-color: $hnm-btn-bg-hr;
+	&:hover {
+		color: $hnm-btn-txt-hvr;
+		background-color: $hnm-btn-bg-hvr;
+		border-color: $hnm-btn-bg-hr;
+	}
+	}
+.page-item{
+	&.active .page-link {
+		color: $hnm-btn-scnd-txt;
+		background-color: $hnm-btn-scnd-bg;
+		border-color: $hnm-btn-scnd-bg-hr;
+	}
+	&.disabled .page-link {
+		color: $hnm-btn-scnd-txt;
+		background-color: $hnm-btn-scnd-bg;
+		border-color: $hnm-btn-scnd-bg-hr;
+	}
+	}
+
+.jumbotron { background-color: $hnm-bg-mid; }
+.progress { background-color: $hnm-bg; }
+.progress-bar {
+	color: $hnm-btn-scnd-txt;
+	background-color: $hnm-btn-scnd-bg;
+	}
+
+.list-group-item-action {
+	color: $hnm-btn-txt;
+	background-color: $hnm-btn-bg;
+	&:hover, &:focus {
+		color: $hnm-btn-txt-hvr;
+		background-color: $hnm-btn-bg-hvr;
+	}
+	&:active {
+		color: $hnm-btn-txt;
+		background-color: $hnm-btn-bg;
+	}
+	}
+.list-group-item {
+	background-color: $hnm-btn-scnd-bg;
+	border-color: $hnm-btn-scnd-bg-hr;
+	&.disabled, &:disabled {
+		color: $hnm-btn-scnd-txt;
+		background-color: $hnm-btn-scnd-bg;
+	}
+	&.active {
+		color: $hnm-txt-scnd;
+		background-color: $hnm-btn-scnd-bg-hvr;
+		border-color:$hnm-btn-scnd-bg-hr;
+	}
+	}
+
+.close {
+	color: $hnm-lnk-dark;
+	&:hover { color: $hnm-lnk-dark-hvr; }
+	}
+
+nav.hnm-navbar{ //グローバルナビ
+	background-color: $hnm-nav-bg;
+	#Navbar > ul > li{
+		> a{ color: $hnm-nav-txt;
+			&:hover{ color: $hnm-nav-txt-hvr; }
+		}
+		&.dropdown > ul.dropdown-menu{
+			> li{ border-bottom-color: $hnm-lnk-dark-hr;
+				> a { color: $hnm-lnk-dark;
+					&:hover{ color: $hnm-lnk-dark-hvr; }
+				}
+			}
+		}
+	}
+	}
+
+@media (max-width: 767.98px) {
+nav.hnm-navbar{
+	#Navbar > ul:nth-child(1) > li:nth-child(3){
+		background-color: saturate($hnm-nav-bg, nth($hnm-per, 3));
+		border-color: darken($hnm-nav-txt, nth($hnm-per, 2));
+	}
+	}}
+
+@media (max-width: 767.98px) { //オフキャンバス
+aside.offcanvas-collapse{
+	background-color: $hnm-bg-alfa;
+	h3{ border-bottom-color: $hnm-hr-alfa; }
+	.hnm-aside-nav{
+		h3{
+			color: $hnm-nav-txt;
+			border-bottom-color: $hnm-hr-alfa;
+		}
+		ul, ol{ border-bottom-color: $hnm-hr-alfa;
+			li{ border-bottom-color: $hnm-hr-alfa;
+				a{ color: $hnm-nav-txt;
+					&:hover{
+						color: $hnm-nav-txt-hvr;
+						background-color: $hnm-base;
+					}
+				}
+			}
+		}
+	}
+	}}
+	@media (min-width: 768px) {
+		aside.offcanvas-collapse h3{ border-bottom-color: $hnm-hr; }
+	}
+
+footer{ // フッター
+	color: $hnm-foot-txt;
+	background-color: $hnm-foot-bg;
+	border-top-color: $hnm-foot-bg-hr;
+	}
+button#btn_top ._icon:before{ color: $hnm-acnt; } // トップボタン
+
+.hnm-lists{ //リスト
+	article > div.row ._desc{
+		border-bottom-color: $hnm-hr-def;
+		h2._title, h3._title{ border-bottom-color: $hnm-lnk-dark-hr;
+			a{ color: $hnm-lnk-dark;
+				&:hover{ color: $hnm-lnk-dark-hvr; }
+			}
+		}
+		p._text a{ color: $hnm-lnk;
+			&:hover{ color:$hnm-lnk-hvr; }
+		}
+	}
+	}
+.hnm-list-box{ // リストボックス
+	article > div.row{
+		border-color: $hnm-hr-scnd;
+		._desc{
+			h2._title a, h3._title a{ color: $hnm-lnk-dark;
+				&:hover{ color: $hnm-lnk-dark-hvr; }
+			}
+			p._text a{ color: $hnm-lnk;
+				&:hover{ color:$hnm-lnk-hvr; }
+			}
+		}
+	}
+	}
+.hnm-thum-box{ // サムネボックス
+	article > div.row{
+		border-color: $hnm-hr-scnd;
+		._desc{
+			h2._title, h3._title{
+				background-color: $hnm-bg-sem-alfa;
+				border-bottom-color: $hnm-lnk-dark-hr;
+				a{ color: $hnm-lnk-dark;
+					&:hover{ color: $hnm-lnk-dark-hvr; }
+				}
+			}
+			p._text{ color: $hnm-txt;
+				a{ color: $hnm-lnk;
+					&:hover{ color:$hnm-lnk-hvr; }
+				}
+			}
+			&.col-7{ background-color: $hnm-bg-sem-alfa; }
+		}
+	}
+	}
+.hnm-page-navi { //ページナビ
+	a{
+		transition: $hnm-btn-trnsition;
+		color: $hnm-btn-txt;
+		background-color: $hnm-btn-bg;
+		&:hover{
+			color: $hnm-btn-txt-hvr;
+			background-color: $hnm-btn-bg-hvr;
+		}
+	}
+	}
+
+.red{ color: $hnm-txt-red; }
+.grn{ color: $hnm-txt-grn;}
+.wht{ color: $white; }
+.dgry{ color: $gray-800; }
+.gry{ color: $gray-500; }
+.lgry{ color: $gray-200; }
+
+#nucleus_lf { // ログインフォーム
+	background-color: $hnm-bg-gry-alfa;
+	.form-signin {
+		h2{ color: $hnm-txt-scnd; }
+		.checkbox{ color: $hnm-txt-scnd; }
+		a, input{
+			&.formbot{
+				color: $hnm-btn-txt;
+				background-color: $hnm-btn-bg;
+				&:focus, &:hover{
+					color: $hnm-btn-txt-hvr;
+					background-color: $hnm-btn-bg-hvr;
+					border-color: $hnm-btn-hr-hvr;
+				}
+				&.scnd{
+					color: $hnm-btn-scnd-txt;
+					background-color: $hnm-btn-scnd-bg;
+					border-color: $hnm-btn-scnd-hr;
+					&:hover{
+						color: $hnm-btn-scnd-txt-hvr;
+						background-color: $hnm-btn-scnd-bg-hvr;
+						border-color: $hnm-btn-scnd-hr-hvr;
+					}
+				}
+			}
+		}
+	}
+	}
+
+.hnm-form{ // 問合せフォーム
+	a, input{
+		&.formbot{
+			color: $hnm-btn-txt;
+			background-color: $hnm-btn-bg;
+			&:focus, &:hover{
+				color: $hnm-btn-txt-hvr;
+				background-color: $hnm-btn-bg-hvr;
+				border-color: $hnm-btn-hr-hvr;
+			}
+		}
+	}
+	}
+
+@media (max-width: 767.98px){
+.hnm-form dt{
+	border-bottom-color: $hnm-hr-def;
+	}}
+
+@media (min-width: 768px){
+.hnm-form dl{
+	border-bottom-color: $hnm-hr;
+	}}
+
+.hnm-table-set dl { // 擬似テーブル
+	dt {
+		color: $hnm-txt-scnd;
+		border-color: $hnm-hr-scnd;
+		background: $hnm-bg-scnd;
+	}
+	dd {
+		color: $hnm-txt;
+		border-color: $hnm-hr;
+		background-color: $hnm-bg;
+	}
+}
