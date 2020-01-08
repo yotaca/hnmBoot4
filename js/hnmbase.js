@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 /*
  * hnmSkin (http://hanamachi.com)
  * Copyright 2016 Hanamach!
-=======
-
-/*
- * hnmSkin (http://hanamachi.com)
- * Copyright 2016 Hanamachi-Ya!
->>>>>>> d172b35290dcab02f693002883bde365b33fab5f
  * Licensed under the MIT license
  */
 
